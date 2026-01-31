@@ -17,7 +17,7 @@ public class SinglyLinkedList<E> {
     public void addFirst(E e) {
         head = new Node<>(e, head);
     }
-
+//Needed method
     public void swapNodes(Node<E> firstNode, Node<E> secondNode) {
         if (firstNode == secondNode) return;
         Node<E> prev1 = null, prev2 = null, current = head;
@@ -40,7 +40,8 @@ public class SinglyLinkedList<E> {
         firstNode.next = secondNode.next;
         secondNode.next = temp;
     }
-        public void printList() {
+    //Added output to demonstrate that it works
+    public void printList() {
             Node<E> current = head;
             while(current != null) {
                 System.out.print(current.element + " ");

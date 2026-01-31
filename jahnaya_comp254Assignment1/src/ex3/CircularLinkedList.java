@@ -29,7 +29,7 @@ public class CircularLinkedList<E> {
 
         size++;
     }
-
+//Needed method
     public CircularLinkedList<E> clone() {
         CircularLinkedList<E> other = new CircularLinkedList<>();
         if (tail ==null) return other;
@@ -44,7 +44,6 @@ public class CircularLinkedList<E> {
     }
 public void printOnce() {
     if (tail == null) {
-        System.out.println("Empty list");
         return;
     }
 

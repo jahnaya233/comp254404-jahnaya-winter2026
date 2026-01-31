@@ -32,7 +32,7 @@ public class DoublyLinkedList<E> {
         size++;
 
     }
-
+//Needed method
     public void concatenate(DoublyLinkedList<E> M) {
         if (M.size == 0) return;
         Node<E> lastL = this.tail.prev;
@@ -43,6 +43,7 @@ public class DoublyLinkedList<E> {
         this.tail = M.tail;
         this.size += M.size;
     }
+//Added output to demonstrate that it works
 
     public void printList() {
      Node<E> current = head.next;
