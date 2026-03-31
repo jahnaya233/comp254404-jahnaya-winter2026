@@ -1,4 +1,4 @@
-package ex1;
+package ex1andex2;
 
 public interface PositionalList <E> extends Iterable<E>{
 
